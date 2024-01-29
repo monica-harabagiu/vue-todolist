@@ -28,7 +28,7 @@ const { createApp } = Vue
             }
         },
         taskDone(index) {
-            this.tasks[index].done = true
+            this.tasks[index].done = !this.tasks[index].done
         },
         removeTask(index)  {
             this.tasks.splice(index, 1)

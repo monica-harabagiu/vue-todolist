@@ -25,6 +25,7 @@
                     <div class="input-group mt-4">
                         <input 
                         v-model="newTask.text"
+                        @keyup.enter="addTask"
                         type="text" 
                         class="form-control" 
                         placeholder="Add task..." 
